@@ -14,5 +14,9 @@
         /// Секция настроек
         /// </summary>
         IAppSettingsSection AppSettings { get; }
+
+        IConfigurationSection GetSection(string name);
+
+        IConfigurationSection SetSection(string name, IConfigurationSection section);
     }
 }

@@ -22,8 +22,18 @@
         /// <summary>
         /// Установить строку соединения
         /// </summary>
+        /// <param name="connectionString"></param>
+        void SetConnectionString(IConnectionString connectionString);
+
+        /// <summary>
+        /// Установить строку соединения
+        /// </summary>
         /// <param name="name">имя строки</param>
         /// <param name="connectionString">строка соединения</param>
-        void SetConnectionString(string name, IConnectionString connectionString);
+        /// <param name="provider">провайдер</param>
+        void SetConnectionString(
+            string name
+            , string connectionString
+            , string provider);
     }
 }

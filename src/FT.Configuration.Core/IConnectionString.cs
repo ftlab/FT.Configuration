@@ -8,16 +8,16 @@
         /// <summary>
         /// Имя строки
         /// </summary>
-        string Name { get; }
+        string Name { get; set; }
 
         /// <summary>
         /// Провайдер
         /// </summary>
-        string Provider { get; }
+        string Provider { get; set; }
 
         /// <summary>
         /// Значение строки соединения
         /// </summary>
-        string Value { get; }
+        string Value { get; set; }
     }
 }
